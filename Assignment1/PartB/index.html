@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>MakeMyTrip Clone - Part B</title>
+</head>
+<body>
+  
+    <!-- Header Block  -->
+      <header>
+        <h1>MakeMyTrip Clone</h1>             
+        <nav>
+          <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>          
+        </nav>
+      </header>
+    <!-- End Block  -->
+
+    <div class="container">
+
+      <!-- Section 1 Block -->
+      <section>  
+        <h2 class="trial">Let the journey begin</h2>  
+        <h3>Search your flight.......</h3>   
+        <div class="booking_container">  
+          <div class="form">
+            <form>            
+              <div class="input-details">
+                <div class="travel-details">
+                  <span class="details">From:</span>
+                  <select name="from">
+                    <option>Select City</option>
+                    <!-- <option value="mumbai">Mumbai</option> -->
+                    <option value="dubai">Dubai</option>
+                    <option value="paris">Paris</option>
+                    <option value="amsterdam">Amsterdam</option>
+                  </select>
+                </div>
+                
+                <div class="travel-details">
+                  <span class="details">To:</span>
+                  <select name="to">
+                    <option>Select City</option>
+                    <!-- <option value="mumbai">Mumbai</option> -->
+                    <option value="dubai">Dubai</option>
+                    <option value="paris">Paris</option>
+                    <option value="amsterdam">Amsterdam</option>
+                  </select>
+                </div>
+                
+                <div class="travel-details">
+                  <span class="details">Depart Date:</span>
+                  <input type="date" id="depart"> 
+                </div>
+                
+                <div class="travel-details">
+                  <span class="details">Return Date:</span>
+                  <input type="date" id="return">
+                </div>
+                
+              </div>
+              <div class="button-container">
+                <button class="search-flight" type="submit">Search</button>
+              </div>                          
+            </form> 
+          </div>                              
+        </div>                 
+      </section>
+      <!-- End Block -->
+
+      <div class="wrapper">
+        <div class="divider div-transparent">        
+        </div>
+      </div>
+
+      <!-- Section 2 Block -->
+      <section class="images_section">
+        <h2>Mesmerizing Views</h2>   
+        <h3>Most visited destinations</h3>
+        <div class="image_container">
+          <div class="card">
+            <div class="card-image1"></div>
+            <div class="card-text">
+              <span class="date">Dubai</span>
+              <p class="city_info">Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image2"></div>
+            <div class="card-text">
+              <span class="date">Paris</span>
+              <p class="city_info">Paris is the capital and largest city of France. The Eiffel Tower—or as the French call it, La Tour Eiffel—is one of the world's most recognizable landmarks.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image3"></div>
+            <div class="card-text">
+              <span class="date">Amsterdam</span>
+              <p class="city_info">Amsterdam is the Netherlands’ capital, known for its artistic heritage, elaborate canal system and narrow houses with gabled facades, legacies of the city’s 17th-century Golden Age. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Block -->
+
+      <div class="wrapper">
+        <div class="divider div-transparent">        
+        </div>
+      </div>
+
+      <!-- Section 3 Block -->
+      <section class="videos_section">
+        <h2>Plan your perfect trip</h2>
+        <h3>View some of the amazing destinations</h3>
+        <div class="video_container">          
+          <div class="video">
+            <video controls>
+              <source src="static/videos/singapore.mp4" type="video/mp4">            
+            </video>
+            <p>Singapore City</p>
+          </div>
+          <div class="video">
+            <video controls>
+              <source src="static/videos/new_york.mp4" type="video/mp4">
+            </video>
+            <p>New York City</p>
+          </div>
+        </div>
+      </section>
+      <!-- End Block -->
+
+    </div>
+
+    <!-- Footer Block  -->
+    <footer>
+      <h6>Plan your travel with MakeMyTrip Clone. Compare cheap flights, hotels and car rental now.</h6>
+      <h6>MakeMyTrip Clone © 2022</h6>
+    </footer>
+    <!-- End Block  -->
+</body>
+</html>

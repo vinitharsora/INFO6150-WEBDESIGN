@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Internal css block  -->
+  <style>
+
+    .container {      
+      padding: 10px;
+      height: 785px;
+      background: linear-gradient(135deg, #2871a1, #6d218b);
+    }
+
+    header {
+      font-weight: 500;
+      font-size: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .search {
+      font-weight: bold;
+      color: black;
+    }
+
+    input {
+      width: 40%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    select {
+      width: 40%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }    
+
+    button {
+      margin-top: 20px;      
+    }
+
+    footer {      
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+    }
+
+  </style>
+  <!-- Exit block  -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MakeMyTrip Clone</title>
+</head>
+<body>  
+  <div class="container">
+    <header>MakeMyTrip Clone</header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="search" href="#">Search Flight</a>
+    </nav>
+    <h3>Book your flight seamlessly</h3>
+    <br />
+    <form>
+      <div>
+        <label for="from">From:</label> <br/>
+        <select name="from">
+          <option>Select City</option>
+          <!-- <option value="mumbai">Mumbai</option> -->
+          <option value="dubai">Dubai</option>
+          <option value="paris">Paris</option>
+          <option value="amsterdam">Amsterdam</option>
+        </select>
+      </div>
+      <div>
+        <label for="to">To:</label> <br/>
+        <select name="to">
+          <option>Select City</option>
+          <!-- <option value="mumbai">Mumbai</option> -->
+          <option value="dubai">Dubai</option>
+          <option value="paris">Paris</option>
+          <option value="amsterdam">Amsterdam</option>
+        </select>
+      </div>
+      <label for="depart">Depart Date</label> <br/>
+      <input type="date" id="depart"> <br/>
+      <label for="return">Return Date</label> <br/>
+      <input type="date" id="return">
+      <div>
+        <label for="travellers">Cabin Class & Travellers</label> <br/>
+        <select name="travellers">
+          <!-- <option value="mumbai">1 Adult, Economy</option> -->
+          <option value="dubai">2 Adult, Economy</option>
+          <option value="paris">1 Adult, Business</option>
+          <option value="amsterdam">2 Adult, Business</option>
+        </select> <br/>
+      </div>
+      <button type="submit">Search</button>
+    </form>
+    <footer>
+      &copy; <em id="date"></em>MakeMyTrip 2022
+    </footer>
+  </div>
+</body>
+</html>
