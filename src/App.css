@@ -1,3 +1,6 @@
+/* Assignment 10 */
+
+
 .App {
   text-align: center;
 }
@@ -14,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +28,28 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #1A237E;
+}
+
+a {
+  color: #000 !important;
+}
+a:hover {
+   color: #1A237E !important;
+   text-decoration: none !important;
+}
+
+.cityName{
+  float: left !important;
+}
+
+.container,.card{
+  background-color: #fff !important;
+}
+
+.btn{
+  color: #000; /* Get weather details button */
+
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +59,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card-hourly{
+  text-align: center;
+}
+
+.data-col{
+  background-color: #111;
+  color: #fff;
+  border-radius: 3rem;
+}
+
+.data-row{
+  margin: 10px;
+}
+
+.data-row-hourly{
+  margin: 10px;
+  width: 50%;
+  margin-left: 23% !important;
+}
+
+.col-header{
+  color: red;
+  margin-top: 20px;
 }
