@@ -1,487 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="scss/style.css">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./img/favicon/site.webmanifest">
-        <link rel="stylesheet" href="./css/main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-        <title>Vinit Harsora</title>
-    </head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-    <body>
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 
-        <header class="header" id="header">
-            <!-- Top fixed navbar -->
-            <nav class="navbar navbar-top navbar-expand-md navbar-dark header__navbar">
-                <div class="container-lg">
-                    <a class="navbar-brand" href="https://github.com/vinitharsora/">Vinit Harsora</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarTopCollapsible" aria-controls="navbarTopCollapsible" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTopCollapsible">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#work">Work</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.linkedin.com/in/vinitharsora/overlay/1635487546814/single-media-viewer/">Resume</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 
+/* Style the top navigation bar */
+.navbar {
+    display: flex;
+    background-color: #515569;
+    
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+</style>
+</head>
+<body>
 
-            <!-- Centered content -->
-            <div class="header__content">
-                <div class="header__img-box">
-                    <img src="./img/developer.jpg" alt="Vinit Harsora" class="header__img">
-                </div>
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">Vinit Harsora</span>
-                    <span class="heading-primary--sub">DevOps Engineer</span>
-                </h1>
-                <div class="header__cta-box">
-                    <a href="#about" class="btn btn--full">About</a>
-                    <a href="#work" class="btn btn--ghost">Work</a>
-                </div>
-            </div>
+<!-- Note -->
 
 
-            <!-- Absolute positioned social icons -->
-            <div class="header__social-icons social-icons">
-                <a href="https://www.facebook.com/vineet.harsora/" class="social-icons__link" target="_blank">
-                    <svg class="icon social-icons__icon">
-                        <use xlink:href="./img/SVG/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-                <a href="https://twitter.com/@HarsoraVinit" class="social-icons__link" target="_blank">
-                    <svg class="icon social-icons__icon">
-                        <use xlink:href="./img/SVG/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/vinitharsora_1701/?hl=en" class="social-icons__link" target="_blank">
-                    <svg class="icon social-icons__icon">
-                        <use xlink:href="./img/SVG/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/vinit-harsora-787286141/" class="social-icons__link" target="_blank">
-                    <svg class="icon social-icons__icon">
-                        <use xlink:href="./img/SVG/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                </a>
+<!-- Header -->
+<div class="header">
+  <video width="100%" height="300" controls>
+    <source src="images/Fruit Song for Kids _ The Singing Walrus.mp4" type="video/mp4">
+     Your browser does not support the video tag.
+  </video>
+</div>
 
-            </div>
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="registrationPage.html">Place Order</a>
+  <a href="#">Contact Us</a>
+  <a href="#">About Us</a>
+</div>
 
-        </header>
+<!-- The flexible grid (content) -->
+<div class="row">
 
-        <section class="about" id="about">
-            <div class="container">
-                <h2 class="heading-secondary">About me</h2>
-                <div class="row justify-content-center">
-                    <div class="col-xs-12 col-md-10 col-lg-8">
-                        <div class="about__content">
-                            <p>
-                                I’m a seasoned DevOps Engineer with a dedicated approach to work and aspire to attain larger goals. 
-                                My key interest lies in in architecting/ automating and optimizing mission critical deployments over large infrastructure.
-                                I'm Proficient with Configuration Management tools, and in developing CI/CD pipelines. I'm also Adept at collaborating with the Software Engineering team
-                                to deploy & operate different systems and to automate & streamline the operations. I'm Proficient in writing
-                                codes & scripts, building independent web-based tools, microservices & solutions, and resolving product
-                                implementation errors. I posses good leadership and public speaking skills. I am always open to new pursuits and ready to explore 
-                                new avenues of work & interest. I aim to be competent and apply my expertise towards contributing to a 
-                                much better and technologically advanced tomorrow.
-                            </p>
-                        </div>
-                        <div class="about__skills my-4">
-                            <h3 class="heading-tertiary">Technologies I know:</h3>
-                            <div class="about__skills-icons mt-2">
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-html5"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-css3"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-javascript"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-php"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-laravel"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-angular"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-jquery"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-mysql"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-bootstrap"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-sass"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-git"></use>
-                                </svg>
-                                <svg class="icon about__skills-icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-linux"></use>
-                                </svg>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="side">
+    <h2>Juice Hub</h2>
+    <h5>Quality Products:</h5>
+    <div>
+        <img src="images/fruit-and-drink-stall-at-the-art-center-night-market-by-the-siem-reap-river-in-this-north-west-tourist-town-siem-reap-cambodia-indochina-asia-T80Y9D.jpeg" style="height:200px;border-radius:50%;border: 7px double white;">
+    </div>
+    <p></p>
+    <h3>Refreshing Fruit Juice</h3>
+    <p>jugo de naranja fresco</p>
+    
+  </div>
 
 
+  <div class="main">
+    <h2>Best Juice Hub</h2>
+    <h5>Prepared from fresh fruits, since, 2000</h5>
+    <div class="gallery2" ><img src="images/fruits.jpeg"  style="height:400px;width:100%"></div>
+    <p>Some text..</p>
+    <p>los fracasos son peldaños hacia el éxito. la honestidad es la mejor política</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <h6><b>MENU CARD:</b></h6>
+    <div class="gallery">
+        <a href="images/istockphoto-1170162958-612x612.jpeg" target="_blank">
+            <img src="images/istockphoto-1170162958-612x612.jpeg" />
+            <div class="description">Banana Shake</div>
+        </a>
+    </div>
+
+    <div class="gallery">
+        <a href="images/Beetroot-Smoothie-4.jpeg" target="_blank">
+            <img src="images/Beetroot-Smoothie-4.jpeg" />
+            <div class="description">Beetroot Juice</div>
+        </a>
+    </div>
+
+    <div class="gallery">
+        <a href="images/img3.jpeg" target="_blank">
+            <img src="images/img3.jpeg" />
+            <div class="description">Pineapple Juice</div>
+        </a>
+    </div>
+    <!-- <div class="gallery">
+        <a href="images/img4.jpg" target="_blank">
+            <img src="images/img4.jpg" />
+            <div class="description">Orange Juice</div>
+        </a>
+    </div>
+    <div class="gallery">
+        <a href="images/img5.jpg" target="_blank">
+            <img src="images/img5.jpg" />
+            <div class="description">Kiwi Juice</div>
+        </a>
+    </div><br><br>
+    <b>MENU CARD:</b> -->
+    <div class="main">
+   
+    <table>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Amul</td>
+          <td>Ratan Tata</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        </tr>
+      </table>
+    </div>
+  </div>
 
 
-                <div class="about__cta-box text-center">
-                    <a href="https://github.com/vinitharsora/portfolio/blob/portfolio/files/Vinit%20Harsora.pdf" class="btn btn--ghost">
-                        <svg class="icon btn__icon-left">
-                            <use xlink:href="./img/SVG/symbol-defs.svg#icon-file-pdf"></use>
-                        </svg>
-                        Resume
-                    </a>
-                    <a href="https://vinitharsora-portfolio.herokuapp.com/" class="btn btn--full" target="_blank">Contact</a>
-                </div>
-            </div>
-        </section>
+</div>
 
-        <section class="work" id="work">
+<!-- Footer -->
+<div class="footer">
+  <p>mail to : <a href="mailto:vinciharsora@gmail.com" style="color:white;">vinciharsora@gmail.com</a></p>
+  <p>Telephone no. :<a href="tel:617-906-1984" style="color:white;">617-906-1984</a></p>
 
-            <div class="container">
-                <h2 class="heading-secondary">Things I've made</h2>
+  <p style="padding:10px;"></p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><img src="images/Gmail_icon_(2020).svg.png" style="height:30px;border-radius:100%;;"></a>
 
-                <ul class="nav nav-tabs justify-content-center mt-5 mb-4" id="workTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="projects-tab" data-toggle="tab" href="#projects" role="tab"
-                            aria-controls="projects" aria-selected="true">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="snippets-tab" data-toggle="tab" href="#snippets" role="tab"
-                            aria-controls="snippets" aria-selected="false">Snippets</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="https://www..com/" role="button"
-                            aria-haspopup="true" aria-expanded="false">Technology</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="https://www.javascript.com/">JavaScript</a>
-                            <a class="dropdown-item" href="https://devops.com/">DevOps</a>
-                            <a class="dropdown-item" href="https://www.java.com/">Java</a>
-                            <a class="dropdown-item" href="https://www.linux.com/">Linux</a>
-                        </div>
-                    </li>
+    <a href="https://www.linkedin.com/in/vinitharsora/"><img src="images/linkedin.png" style="height:30px;border-radius:100%;"></a>
+    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><img src="images/twitter.png" style="height:30px;border-radius:100%;;"></a>
+  </p>
+</div>
 
-                </ul>
-
-                <div class="tab-content">
-
-                    <div class="work__content work__content--projects tab-pane fade show active" id="projects"
-                        role="tabpanel" aria-labelledby="projects-tab">
-                        <div class="row justify-content-center">
-                            <div class="project-box col-sm-12 col-md-6 col-lg-4 mb-5">
-                                <div class="project">
-                                    <div class="project__img-box">
-                                        <img src="./img/p-1124x700.jpg" alt="Project 1" class="project__img img-fluid">
-                                    </div>
-
-                                    <div class="project__content-box">
-                                        <h3 class="heading-tertiary">Vinit Harsora Portfolio</h3>
-                                        <p class="project__details"> A web portfolio dedicated to display the projects created by me and other various fields!</p>
-                                        <div class="project__cta-box text-center">
-                                            <a href="https://vinitharsora-portfolio.herokuapp.com/" class="btn btn--ghost">
-                                                <svg class="icon btn__icon-left icon-earth">
-                                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-earth"></use>
-                                                </svg>
-                                                Demo</a>
-                                            <a href="https://github.com/vinitharsora/portfolio" class="btn btn--full">
-                                                <svg class="icon btn__icon-left icon-earth">
-                                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
-                                                </svg>
-                                                Source</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="project-box col-sm-12 col-md-6 col-lg-4 mb-5">
-                                <div class="project">
-                                    <div class="project__img-box">
-                                        <img src="./img/dental1.jpg" alt="Project 2" class="project__img img-fluid">
-                                    </div>
-                                    <div class="project__content-box">
-                                        <h3 class="heading-tertiary">Dental Management System</h3>
-                                        <p class="project__details"> Dental Management System using MS-SQL server.
-                                        </p>
-                                        <div class="project__cta-box text-center">
-                                            <a href="#" class="btn btn--ghost">
-                                                <svg class="icon btn__icon-left icon-earth">
-                                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-earth"></use>
-                                                </svg>
-                                                Demo</a>
-                                            <a href="https://github.com/vinitharsora/DMDD-18475_FinalProject" class="btn btn--full">
-                                                <svg class="icon btn__icon-left icon-earth">
-                                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
-                                                </svg>
-                                                Source</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="project-box col-sm-12 col-md-6 col-lg-4 mb-5">
-                                <div class="project">
-                                    <div class="project__img-box">
-                                        <img src="./img/Temp-1124x750.jpg" alt="Project 3" class="project__img img-fluid">
-                                    </div>
-                                    <div class="project__content-box">
-                                        <h3 class="heading-tertiary">Vaccine Management App</h3>
-                                        <p class="project__details"> A Vaccine Management app created using Java and Swing Framework.</p>
-                                        <div class="project__cta-box text-center">
-                                            <a href="#" class="btn btn--ghost">
-                                                <svg class="icon btn__icon-left icon-earth">
-                                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-earth"></use>
-                                                </svg>
-                                                Demo</a>
-                                            <a href="https://github.com/vinitharsora/AED_FinalProject" class="btn btn--full">
-                                                <svg class="icon btn__icon-left icon-earth">
-                                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
-                                                </svg>
-                                                Source</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-12 mb-2 mt-n1 text-center"><a href="#" class="btn btn--full">Show all</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="work__content work__content--snippets tab-pane fade" id="snippets" role="tabpanel"
-                        aria-labelledby="snippets-tab">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-8 col-xs-12 ">
-                                <table class="table table-sm table-responsive-sm table-bordered table-striped my-5">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Title</th>
-                                            <th scope="col">Technology</th>
-                                            <th scope="col">Updated</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td><a href="https://github.com/vinitharsora/INFO6150-WEBDESIGN">INFO-Web Design (NEU)</a></td>
-                                            <td>JavaScript</td>
-                                            <td>06-19-2022</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td><a href="https://github.com/SumariaAk/AED_FinalProject">Vaccine Management System</a></td>
-                                            <td>Java</td>
-                                            <td>12-12-2021</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td><a href="https://github.com/vinitharsora/DMDD-18475_FinalProject">DAMG 6105 - Dental Management System</a></td>
-                                            <td>SQL</td>
-                                            <td>12-22-2021</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td><a href="https://github.com/vinitharsora/webservice">CSYE 6225 - Network Structures and Cloud Computing</a></td>
-                                            <td>Node.js & AWS Cloudformation</td>
-                                            <td>04-21-2022</td>
-                                        </tr>                                        
-                                    </tbody>
-                                </table>
-
-                                <nav aria-label="Work Code Snippets" class="my-4">
-                                    <ul class="pagination justify-content-center">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="https://www..com/" tabindex="-1">Previous</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="https://www..com/">1</a></li>
-                                        <li class="page-item active">
-                                            <a class="page-link" href="https://www..com/">2 <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="https://www..com/">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="https://www..com/">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="counter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="counter__box">
-                            <div class="counter__icon-box">
-                                <svg class="icon counter__icon">
-                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-embed"></use>
-                                </svg>
-                            </div>
-                            <span class="counter__count">2000</span>
-                            <p class="counter__title">Lines of code</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="counter__box">
-                            <div class="counter__icon-box">
-                                <svg class="icon counter__icon">
-                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-github"></use>
-                                </svg>
-                            </div>
-                            <span class="counter__count">6</span>
-                            <p class="counter__title">Projects done</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="counter__box">
-                            <div class="counter__icon-box">
-                                <svg class="icon counter__icon">
-                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-edit"></use>
-                                </svg>
-                            </div>
-                            <span class="counter__count">10</span>
-                            <p class="counter__title">Articles written</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="counter__box">
-                            <div class="counter__icon-box">
-                                <svg class="icon counter__icon">
-                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-sun"></use>
-                                </svg>
-                            </div>
-                            <span class="counter__count">25</span>
-                            <p class="counter__title">Years lived</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contact" id="contact">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xs-12 ">
-                        <h2 class="heading-secondary ">Contact me</h2>
-                        <form>
-                            <div class="form-group">
-                                <label for="Username">Username</label>
-                                <input required type="text" class="form-control input-group" id="Username">
-                            </div>
-                            <div class="form-group">
-                                <label for="Email">Email</label>
-                                <input required type="email" class="form-control input-group" id="Email">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input required type="text" class="form-control input-group" id="subject">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Your message</label>
-                                <textarea required type="text" class="form-control" id="message" rows="4"></textarea>
-                            </div>
-
-
-                            <button id="sendMessage" type="submit" class="mt-2 btn btn--full float-right" data-toggle="tooltip" data-placement="right" title="Click to Send Message">Send <svg
-                                    class="icon btn__icon-right">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-paper-plane"></use>
-                                </svg>
-                            </button>
-                            <br><br><br>
-                            <div class="alert alert-success" role="alert" style="display: none; background-color: lightgreen; color: black;">
-                                Message sent!
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="row justify-content-center ">
-                    <div class="col-12  py-5 text-center mb-2">
-                        <h3 class="mb-4 heading-tertiary footer__social-heading">Stay connected</h3>
-                        <!-- Absolute positioned social icons -->
-                        <div class=" social-icons social-icons--lg">
-                            <a href="https://www.facebook.com/vineet.harsora/" class="social-icons__link" target="_blank">
-                                <svg class="icon social-icons__icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                            <a href="https://twitter.com/@HarsoraVinit" class="social-icons__link" target="_blank">
-                                <svg class="icon social-icons__icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                            <a href="https://www.instagram.com/vinitharsora_1701/?hl=en" class="social-icons__link" target="_blank">
-                                <svg class="icon social-icons__icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                            <a href="https://www.linkedin.com/in/vinit-harsora-787286141/" class="social-icons__link" target="_blank">
-                                <svg class="icon social-icons__icon">
-                                    <use xlink:href="./img/SVG/symbol-defs.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-12 mt-auto">
-                        <nav class="nav footer__nav justify-content-around">
-                            <a class="nav-link active" href="#header">Home</a>
-                            <a class="nav-link" href="#work">Projects</a>
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
-
-
-
-        <script src="./js/vendors/jquery/jquery.min.js"></script>
-        <script src="./js/vendors/waypoints/jquery.waypoints.min.js"></script>
-        <script src="./js/vendors/popper/popper.min.js"></script>
-        <script src="./js/vendors/bootstrap/bootstrap.min.js"></script>
-        <script src="./js/script.js"></script>
-    </body>
-
+</body>
 </html>
