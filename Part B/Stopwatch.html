@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Stopwatch in JS</title>
+	<style type="text/css">
+		body {
+			background: burlywood;
+			color: #f6f6f6;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		.stopwatch {
+			font-size: 18em;
+			font-family: 'Times New Roman', Times, serif;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		ul li {
+			list-style: none;
+			padding: 10px 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="controls">
+		<button onclick="start()">Start</button>
+		<button onclick="pause()">Stop</button>
+		<button onclick="stop()">Reset</button>
+
+	</div>
+	<div class="stopwatch">00:00:00</div>
+
+	<script type="text/javascript">
+
+		var ms = 0, s = 0, m = 0, h = 0;
+		var timer;
+
+		var stopwatchEl = document.querySelector('.stopwatch');
+
+		function start() {
+			if (!timer) {
+				timer = setInterval(run, 1000);
+			}
+		}
+
+		function run() {
+			stopwatchEl.textContent = getTimer();
+			s++;
+			myDisplay();
+		}
+		async function myDisplay() {
+			let myPromise = new Promise(function (resolve, reject) {
+				if (s == 60) {
+					s = 0;
+					m++;
+				}
+				if (m == 60) {
+					s = 0;
+					m = 0;
+					h++;
+				}
+			});
+
+		}
+
+		function pause() {
+			stopTimer();
+		}
+
+		function stop() {
+			stopTimer();
+			ms = 0;
+			s = 0;
+			m = 0;
+			h = 0;
+			stopwatchEl.textContent = getTimer();
+		}
+
+		function stopTimer() {
+			clearInterval(timer);
+			timer = false;
+		}
+
+		function getTimer() {
+			return (h < 10 ? "0" + h : h) + ":" + (m < 10 ? "0" + m : m) + ":" + (s < 10 ? "0" + s : s);
+		}
+
+		function restart() {
+			stop();
+			start();
+		}
+
+
+
+	</script>
+
+</body>
+
+</html>

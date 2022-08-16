@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part A</title>
+    <style>
+        body{
+        background: burlywood;
+        }
+        .text-red {
+            color: red;
+        }
+        .my-1 {
+            margin: 1rem 0;
+        }
+        .mr-1 {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body><center>
+    <div class="my-1">
+        <label for="first_name">Username</label>
+        <input type="text" id="first_name" readonly>
+    </div>
+    <div>
+        <label for="num1">Number 1</label>
+        <input type="text" id="num1"> <br>
+        <span class="text-red" id="no-num1">Please enter a number</span>
+        <span class="text-red" id="invalid-num1">Please enter a valid number</span>
+    </div>
+    <div class="my-1">
+        <label for="num2">Number 2</label>
+        <input type="text" id="num2"> <br>
+        <span class="text-red" id="no-num2">Please enter a number</span>
+        <span class="text-red" id="invalid-num2">Please enter a valid number</span>
+    </div>
+    <div>
+        <label for="num3">Number 3</label>
+        <input type="text" id="num3"> <br>
+        <span class="text-red" id="no-num3">Please enter a number</span>
+        <span class="text-red" id="invalid-num3">Please enter a valid number</span>
+    </div>
+    <div class="my-1">
+        <label for="result">Result</label>
+        <input type="text" id="result" readonly>
+    </div>
+    <div>
+        <button class="mr-1">Add</button>
+        <button class="mr-1">Subtract</button>
+        <button class="mr-1">Multiply</button>
+        <button class="mr-1">Divide</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $('.text-red').hide();
+        var urlVal = window.location.href;
+        var first_name = urlVal.split('?first_name=')[1];
+        $('#first_name').val(first_name);
+        $('button').click((e) => {
+            $('.text-red').hide();
+            var operation = e.target.innerHTML;
+            var numValidator = '^[0-9]*$';
+            var num1 = $('#num1').val();
+            var num2 = $('#num2').val();
+            var num3 = $('#num3').val();
+            var errPresent = false;
+            if (num1.length == 0) {
+                $('#no-num1').show();
+                errPresent = true;
+            } else if (num1.match(numValidator) == null) {
+                $('#invalid-num1').show();
+                errPresent = true;
+            }
+            if (num2.length == 0) {
+                $('#no-num2').show();
+                errPresent = true;
+            } else if (num2.match(numValidator) == null) {
+                $('#invalid-num2').show();
+                errPresent = true;
+            }
+            if (num3.length == 0) {
+                $('#no-num3').show();
+                errPresent = true;
+            } else if (num3.match(numValidator) == null) {
+                $('#invalid-num3').show();
+                errPresent = true;
+            }
+            if (!errPresent) {
+                num1 = Number(num1);
+                num2 = Number(num2);
+                num3 = Number(num3);
+                if (operation == 'Add') {
+                    $('#result').val(num1 + num2 + num3);
+                } else if (operation == 'Subtract') {
+                    $('#result').val(num1 - num2 - num3);
+                } else if (operation == 'Multiply') {
+                    $('#result').val(num1 * num2 * num3);
+                } else if (operation == 'Divide') {
+                    $('#result').val((num1 / num2) / num3);
+                }
+            }
+        })
+    </script><center>
+</body>
+</html>
